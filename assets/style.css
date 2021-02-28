@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	color: #3d3d3d;
+}
+
+h2 {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 0.6em;
+	border-top: 1px solid #e5523e;
+}
+
+#main-gallery {
+    display: flex;
+	width: 1100px;
+	height: 550px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#big-left {
+	background-image: url("../assets/img/1.jpg");
+	background-size: cover;
+	margin-right: 20px;
+    width: 700px;
+	height: 550px;
+}
+
+#top {
+	background-image: url("../assets/img/2.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 700;
+	height: 250px;
+	margin-left: 20px;
+	margin-bottom: 35px;
+}
+
+#b-left {
+	background-image: url("../assets/img/3.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 320px;
+	height: 260px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+#b-right {
+	background-image: url("../assets/img/4.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 320px;
+	height: 260px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.photos {
+	width: 700px;
+	height: 550px;
+}
+
+.bottom {
+    display: flex;
+	width: 700;
+	height: 250px;
+	margin-left: 20px;
+	margin-top: -15px;
+}
+
+.text-big-left {
+	transform: rotate(-90deg);
+	position: absolute;
+	width: 80px;
+	bottom: 60px;
+	left: 10px;
+	transition: all 0.4s ease-out;	
+}
+
+.text-top {
+	transform: rotate(-90deg);
+	position: absolute;
+	width: 80px;
+	bottom: 60px;
+	left: 10px;
+	transition: all 0.4s ease-out;
+}
+
+.text-bottom {
+	transform: rotate(-90deg);
+	position: absolute;
+	width: 80px;
+	bottom: 60px;
+	left: 10px;
+	transition: all 0.4s ease-out;
+}
+
+.cont-big-left {
+	width: 380px;
+	height: 550px;	
+}
+
+.cont-top {
+	position: absolute;
+	background-size: 0% 100%;
+	transition: all 0.4s ease-out;
+	width: 680px;
+	height: 250px;	
+}
+
+.cont-bottom {
+	position: absolute;
+	background-size: 0% 100%;
+	transition: all 0.4s ease-out;
+	width: 320px;
+	height: 260px;	
+}
+
+.cont-big-left:hover {
+	background-color: #03030396;
+	background-size: 200% 100%;
+	transition: all 0.6s ease-out;
+}
+
+.cont-top:hover {
+	background-color: #03030396;
+	background-size: 200% 100%;
+	transition: all 0.6s ease-out;
+}
+
+.cont-bottom:hover {
+	background-color: #03030396;
+	background-size: 200% 100%;
+	transition: all 0.6s ease-out;
+}
+
+.cont-big-left:hover>.text-big-left {
+	transition: all 0.6s ease;
+	position: absolute;
+	transform: rotate(-0deg);
+	color: white;
+	left: 50px;
+}
+
+.cont-top:hover:hover>.text-top{
+	transition: all 0.6s ease;
+	position: absolute;
+	transform: rotate(-0deg);
+	color: white;
+	left: 50px;
+}
+
+.cont-bottom:hover>.text-bottom {
+	transition: all 0.6s ease;
+	position: absolute;
+	transform: rotate(-0deg);
+	color: white;
+	left: 50px;
+}
