@@ -26,6 +26,24 @@ h2 {
 	transform: translate(-50%, -50%);
 }
 
+#top-products {
+    display: flex;
+	width: 1100px;
+	height: 550px;
+	position: absolute;
+	padding: 320px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.glide__slide {
+	border: 1px solid black;
+	line-height: 100px;
+	margin: 0;
+	text-align: center;
+  }
+
 #big-left {
 	background-image: url("../assets/1.jpg");
 	background-size: cover;
